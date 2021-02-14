@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
-func timesTwo(number int) int {
-	return number * 2
+func timesTwo(number int) (int, int) {
+	return number, number * 2
 }
 
 func main() {
-	fmt.Println(timesTwo((4)))
+	n, nn := timesTwo(4)
+	fmt.Println(n, nn)
 }
